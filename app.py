@@ -344,6 +344,7 @@ with tab2:
                     title=f"Prediksi vs Aktual {target_year}",
                     barmode="group", height=380,
                     yaxis_title="Penumpang", plot_bgcolor="white",
+                    textfont=dict(color="black"),
                     yaxis=dict(gridcolor="#e5e7eb"),
                     legend=dict(orientation="h", yanchor="bottom", y=1.02),
                 )
