@@ -354,7 +354,7 @@ with tab2:
                 colors_bar = ["#10b981" if e < 5 else "#f59e0b" if e < 15 else "#ef4444" for e in err_pcts]
                 fig_err = go.Figure(go.Bar(
                     x=MONTHS, y=err_pcts, marker_color=colors_bar,
-                    text=[f"{v:.1f}%" for v in err_pcts], textposition="outside",
+                    text=[f"{v:.1f}%" for v in err_pcts], textposition="outside",textfont=dict(color="black",
                 ))
                 fig_err.add_hline(y=5, line_dash="dash", line_color="#10b981", annotation_text="5% threshold")
                 fig_err.update_layout(
@@ -376,7 +376,7 @@ with tab2:
 
                 fig_2026 = go.Figure(go.Bar(
                     x=MONTHS, y=preds, marker_color="#7c3aed",
-                    text=[f"{p:,}" for p in preds], textposition="outside",
+                    text=[f"{p:,}" for p in preds], textposition="outside",textfont=dict(color="black"),
                 ))
                 fig_2026.update_layout(
                     title="Prediksi Penumpang Kereta Api Jabodetabek 2026",
