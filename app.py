@@ -360,7 +360,7 @@ with tab2:
                 fig_err.update_layout(
                     title=f"Error Persentase per Bulan – {target_year}",
                     yaxis_title="Error (%)", height=340, plot_bgcolor="white",
-                    yaxis=dict(gridcolor="#e5e7eb"),
+                    yaxis=dict(gridcolor="#111827"),
                 )
                 st.plotly_chart(fig_err, use_container_width=True)
 
